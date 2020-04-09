@@ -1,0 +1,8 @@
+.breadcrumbs-wrapper {
+	/* background-color: grey; */
+	position: relative;
+	display: flex;
+	min-height: 50px;
+	/* justify-content: space-between; */
+	align-items: center;
+}

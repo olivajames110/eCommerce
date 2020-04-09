@@ -1,0 +1,133 @@
+header {
+	width: 100%;
+	// border-bottom: 1px solid #e2e2e2;
+	display: flex;
+	box-shadow: 0px 1px 5px 3px #00000014;
+	// padding: 0 20px;
+}
+.navbar-wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.cart-container {
+	position: relative;
+	display: flex;
+	padding: 15px;
+	flex-direction: column;
+	align-items: center;
+	background: #f9f9f9;
+	// border-left: 1px solid #e2e2e2;
+	// height: 100%;
+	justify-content: center;
+	transition: 160ms;
+	cursor: pointer;
+	&:hover {
+		background: #f0f0f0;
+	}
+	#shopping_bag {
+		width: 35px;
+	}
+
+	.cart-title {
+		margin-top: 5px;
+		font-size: 11px;
+	}
+	.badge-container {
+		position: absolute;
+		top: 18px;
+		right: 23px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #d60604;
+		color: white;
+		font-size: 10px;
+		width: 18px;
+		height: 18px;
+		border-radius: 50%;
+	}
+}
+
+//LOGO
+
+.logo-wrapper svg {
+	width: 200px;
+	// margin: 0px 25px;
+	height: inherit;
+	// padding: 0 20px;
+}
+
+svg {
+	margin: 0 auto;
+	path {
+		transition: 350ms;
+	}
+	#c {
+		// transform: rotate(-25deg) translate(-50px, 12px);
+		animation-delay: 40ms;
+	}
+	#a {
+		animation-delay: 100ms;
+	}
+	#r {
+		animation-delay: 200ms;
+	}
+	#l {
+		animation-delay: 250ms;
+	}
+	#y {
+		animation-delay: 300ms;
+	}
+}
+
+.animate,
+.animateL {
+	animation-duration: 400ms;
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+	transition: 430ms;
+}
+
+.animate {
+	animation-name: animate;
+}
+
+.animateL {
+	animation-name: animateL;
+}
+
+@keyframes animateC {
+	0% {
+		transform: rotate(15deg) translate(0, 0);
+	}
+	30% {
+		transform: rotate(-15deg) translate(0, 0);
+	}
+	90% {
+		transform: translate(-50px, 12px);
+	}
+	100% {
+		transform: rotate(0deg) translate(-90px, 38px);
+	}
+}
+
+@keyframes animate {
+	0% {
+		transform: translate(0, 0);
+	}
+	100% {
+		transform: translate(-80px, 43px);
+	}
+}
+
+@keyframes animateL {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(80px);
+	}
+}

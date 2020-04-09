@@ -1,0 +1,221 @@
+header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0px 1px 5px 3px #00000014;
+          box-shadow: 0px 1px 5px 3px #00000014;
+}
+
+.navbar-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cart-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f9f9f9;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 160ms;
+  transition: 160ms;
+  cursor: pointer;
+}
+
+.cart-container:hover {
+  background: #f0f0f0;
+}
+
+.cart-container #shopping_bag {
+  width: 35px;
+}
+
+.cart-container .cart-title {
+  margin-top: 5px;
+  font-size: 11px;
+}
+
+.cart-container .badge-container {
+  position: absolute;
+  top: 18px;
+  right: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #d60604;
+  color: white;
+  font-size: 10px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+
+.logo-wrapper svg {
+  width: 200px;
+  height: inherit;
+}
+
+svg {
+  margin: 0 auto;
+}
+
+svg path {
+  -webkit-transition: 350ms;
+  transition: 350ms;
+}
+
+svg #c {
+  -webkit-animation-delay: 40ms;
+          animation-delay: 40ms;
+}
+
+svg #a {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+svg #r {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+svg #l {
+  -webkit-animation-delay: 250ms;
+          animation-delay: 250ms;
+}
+
+svg #y {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+
+.animate,
+.animateL {
+  -webkit-animation-duration: 400ms;
+          animation-duration: 400ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+          animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  -webkit-transition: 430ms;
+  transition: 430ms;
+}
+
+.animate {
+  -webkit-animation-name: animate;
+          animation-name: animate;
+}
+
+.animateL {
+  -webkit-animation-name: animateL;
+          animation-name: animateL;
+}
+
+@-webkit-keyframes animateC {
+  0% {
+    -webkit-transform: rotate(15deg) translate(0, 0);
+            transform: rotate(15deg) translate(0, 0);
+  }
+  30% {
+    -webkit-transform: rotate(-15deg) translate(0, 0);
+            transform: rotate(-15deg) translate(0, 0);
+  }
+  90% {
+    -webkit-transform: translate(-50px, 12px);
+            transform: translate(-50px, 12px);
+  }
+  100% {
+    -webkit-transform: rotate(0deg) translate(-90px, 38px);
+            transform: rotate(0deg) translate(-90px, 38px);
+  }
+}
+
+@keyframes animateC {
+  0% {
+    -webkit-transform: rotate(15deg) translate(0, 0);
+            transform: rotate(15deg) translate(0, 0);
+  }
+  30% {
+    -webkit-transform: rotate(-15deg) translate(0, 0);
+            transform: rotate(-15deg) translate(0, 0);
+  }
+  90% {
+    -webkit-transform: translate(-50px, 12px);
+            transform: translate(-50px, 12px);
+  }
+  100% {
+    -webkit-transform: rotate(0deg) translate(-90px, 38px);
+            transform: rotate(0deg) translate(-90px, 38px);
+  }
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(-80px, 43px);
+            transform: translate(-80px, 43px);
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(-80px, 43px);
+            transform: translate(-80px, 43px);
+  }
+}
+
+@-webkit-keyframes animateL {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(80px);
+            transform: translateX(80px);
+  }
+}
+
+@keyframes animateL {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(80px);
+            transform: translateX(80px);
+  }
+}
+/*# sourceMappingURL=navbar.css.map */
